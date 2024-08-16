@@ -72,7 +72,7 @@ export default function Tweet({ username, photo, tweet, userId, id }: ITweet) {
           <DeleteButton onClick={onDelete}>Delete</DeleteButton>
         ) : null}
       </Column>
-      {photo ? <Column>{photo ? <Photo src={photo} /> : null}</Column> : null}
+      <Column>{photo ? <Photo src={photo} /> : null}</Column>
     </Wrapper>
   );
 }
